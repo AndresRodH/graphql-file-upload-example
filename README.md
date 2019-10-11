@@ -1,3 +1,11 @@
+# Brosito
+
+1. Descargar [Node](https://nodejs.org/en/)
+2. Descargar [Yarn](https://yarnpkg.com/lang/en/)
+3. Sigue las instrucciones abajo, la unica diferencia es que en vez de escribir `npm` vas a escribir `yarn`. (No necesitas escribir `yarn run {script}`, solo `yarn {script}`. Por ejemplo, `npm run build` === `yarn build`)
+
+Si no te lo dije suficiente, te extrano muchisimo brosito ❤️
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
