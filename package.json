@@ -1,5 +1,5 @@
 {
-  "name": "ronin-graphql-file-upload-example",
+  "name": "graphql-file-upload-example",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

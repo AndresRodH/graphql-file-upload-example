@@ -50,7 +50,7 @@ export default function Info({ info, onSubmit }) {
           type="text"
           value={endpoint}
           onChange={e => setEndpoint(e.target.value)}
-          placeholder="GraphQL endpoint (https://dev.roninservices.com/ronin/gql)"
+          placeholder="GraphQL endpoint (https://env.com/gql)"
         />
       ) : (
         <a

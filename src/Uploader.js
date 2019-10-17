@@ -53,14 +53,15 @@ export default function Uploader() {
             data.fileUpload.map((file, idx) => (
               <React.Fragment key={idx}>
                 <div onClick={() => window.open(file.url, "_blank")}>
-                  {file.contentType === "image/png" ? (
+                  {file.contentType.includes("image") && (
                     <div
                       className="file-grid-item"
                       style={{
                         backgroundImage: `url(${file.url})`
                       }}
                     />
-                  ) : (
+                  )}
+                  {file.contentType.includes("text") && (
                     <div className="file-grid-item">{file.filename}</div>
                   )}
                 </div>
