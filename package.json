@@ -1,5 +1,5 @@
 {
-  "name": "jose",
+  "name": "ronin-graphql-file-upload-example",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,14 +7,15 @@
     "apollo-cache-inmemory": "^1.6.3",
     "apollo-client": "^2.6.4",
     "apollo-link": "^1.2.13",
+    "apollo-link-context": "^1.0.19",
     "apollo-link-error": "^1.1.12",
     "apollo-link-http": "^1.5.16",
     "apollo-upload-client": "^11.0.0",
     "graphql": "^14.5.8",
+    "graphql-tag": "^2.10.1",
+    "jwt-decode": "^2.2.0",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
-    "react-router": "^5.1.1",
-    "react-router-dom": "^5.1.1",
     "react-scripts": "3.1.2"
   },
   "scripts": {

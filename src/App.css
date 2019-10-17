@@ -1,22 +1,104 @@
+:root {
+  --primary: #09d3ac;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
-  color: #09d3ac;
+  color: var(--primary);
+}
+
+.main-layout {
+  display: grid;
+  grid: 1fr / 500px 1fr;
+  gap: 16px;
+  margin: 0 16px;
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.uploader-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.raw-view {
+  display: flex;
+  width: 100%;
+  overflow: scroll;
+  max-height: 500px;
+  margin-top: 8px;
+}
+
+.file-grid {
+  margin: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 8px;
+  justify-items: stretch;
+  align-items: center;
+  overflow: scroll;
+  max-height: 500px;
+}
+
+.file-grid-item {
+  display: flex;
+  align-items: center;
+  height: 250px;
+  justify-content: center;
+  width: 100%;
+  color: black;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.file-grid-item:hover {
+  opacity: 0.7;
+}
+
+button {
+  margin: 0;
+  padding: 8px;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+textarea,
+input[type="text"] {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  height: 32px;
+  box-shadow: 0 0 2px #e9e9e9;
+  border: none;
+  font-family: inherit;
+}
+
+.main-layout section {
+  margin: 16px;
 }
