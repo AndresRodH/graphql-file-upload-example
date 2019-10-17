@@ -9,13 +9,16 @@ import Uploader from "./Uploader";
 const LOCALSTORAGE_KEY = "ronin-upload";
 
 function App() {
+  // initialize/get the initial info object from localstorage
   const [info, setInfo] = useLocalStorage(LOCALSTORAGE_KEY, {
     info: "",
     endpoint: ""
   });
+  // apollo client
   const [client, setClient] = React.useState();
 
   React.useEffect(() => {
+    // make a new apollo client based on info changes
     setClient(createClient(info));
   }, [info]);
 

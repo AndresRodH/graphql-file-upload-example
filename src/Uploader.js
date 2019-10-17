@@ -3,6 +3,7 @@ import gql from "graphql-tag";
 import { useMutation } from "@apollo/react-hooks";
 
 const FILE_UPLOAD = gql`
+  # these all the properties as of 10/16/2019
   mutation($files: [Upload!]!) {
     fileUpload(files: $files) {
       aliases
@@ -23,7 +24,6 @@ const FILE_UPLOAD = gql`
 export default function Uploader() {
   const [data, setData] = React.useState({});
   const [uploadFiles, { error }] = useMutation(FILE_UPLOAD, {
-    errorPolicy: "all",
     onCompleted: data => setData(data)
   });
   const [showGrid, setShowGrid] = React.useState(false);

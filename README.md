@@ -1,12 +1,8 @@
-# Brosito
+# GraphQL File Upload Test Page
+Something I threw together during a trip to Chicago. Was working on file uploads on the server via GraphQL using Apollo Server v2.
 
-1. Descargar [Node](https://nodejs.org/en/)
-2. Descargar [Yarn](https://yarnpkg.com/lang/en/)
-3. Sigue las instrucciones abajo, la unica diferencia es que en vez de escribir `npm` vas a escribir `yarn`. (No necesitas escribir `yarn run {script}`, solo `yarn {script}`. Por ejemplo, `npm run build` === `yarn build`)
-
-Si no te lo dije suficiente, te extrano muchisimo brosito ❤️
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How does it work
+A GraphQL endpoint and a token have to be provided in order to perform the `fileUpload` mutation. The token has to be a valid JWT and the environment has to be a valid GraphQL endpoint that exposes the `fileUpload` mutation. It becomes very handy since we handle multiple environments.
 
 ## Available Scripts
 
